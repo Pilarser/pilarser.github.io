@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Serena Magliulo - Personal Website</title>
+    <!--    Metadata    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serena Magliulo / Front End Developer / Personal Website" />
+    <meta name="author" content="Serena Magliulo" />
+    <meta name="keywords" content="Serena Magliulo, portfolio, front, end, developer, development, personal, website, services, web" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <!--    Stylesheets     -->
+    <!--    Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
+    <!--    Font Awesome    -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!--   Animate.CSS -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <!--    Fonts       -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo|Julius+Sans+One|Luckiest+Guy|Open+Sans+Condensed:300|Poiret+One|Rajdhani|VT323" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <!--    Main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <!--    jQuery      -->
+    
+    <script src="js/jquery.min.js"></script>
+    <!-- BS library -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--    CountUp     -->
+    <script type="text/javascript" src="js/countUp.js"></script>
+    <!--    Typed.js     -->
+    <script type="text/javascript" src="js/typed.min.js"></script>
+    <!--    Progressbar.js  -->
+    <script type="text/javascript" src="js/progressbar.min.js"></script>
+    <!--    Index.js       -->
+    <script type="text/javascript" src="index.js"></script>
+    
+</head>
+
+<body onload="myFunction()" id="body">
+    <!--    Loader      -->
+    <div id="loader">
+    </div>
+    <div id="percentage">
+        <span id="count">0%</span>
+    </div>
+    <!--    End of Loader   -->
+    <!--    Main Content    -->
+    <main style="display:none;" id="myPage" class="fadeIn animated">
+        <!--    Header      -->
+        <div class="hero-image">
+            <!--        Navigation Icons        -->
+            <!--        01 Menu Icon        -->
+            <a href="#Menu" data-toggle="modal" onclick="openMenu()">
+                <div class="nav_icon menu_icon">
+                    <span class="fa fa-bars"></span>
+                    <span class="sub_text menu_sub_text">Menu</span>
+                </div>
+            </a>
+            <!--        End of 01 Menu Icon     -->
+            <!--        02 About Icon        -->
+            <div onclick="aibar()">
+                <a href="#About" onclick="openAbout();" id="aboutbutton">
+                    <div class="nav_icon about_icon">
+                        <span class="fa fa-user"></span>
+                        <span class="sub_text">About</span>
+                    </div>
+                </a>
+            </div>
+            <!--        End of 02 About Icon     -->
+            <!--        04 Contact Icon        -->
+            <a href="#Contact" onclick="openContact()">
+                <div class="nav_icon contact_icon">
+                    <span class="fa fa-envelope-o"></span>
+                    <span class="sub_text">Contact</span>
+                </div>
+            </a>
+            <!--        End of 04 Contact Icon     -->
+            <!--        03 Portfolio Icon        -->
+            <a href="#Portfolio" onclick="openPortfolio()">
+                <div class="nav_icon portfolio_icon">
+                    <span class="fa fa-photo"></span>
+                    <span class="sub_text">Portfolio</span>
+                </div>
+            </a>
+            <!--        End of 03 Porfolio Icon     -->
+            <!--        End of Navigation Icons     -->
+            <!--        Landing Page Content        -->
+            <img src="img/logo.jpg" class="hero-logo" alt="logo" />
+            <div class="hero-text">
+                <h1 class="text-uppercase headerone">Serena Magliulo</h1>
+                <h2 class="headertwo">FRONT-END DEVELOPER</h2>
+            </div>
+        </div>
+    </main>
+    <!--    End of Main Content     -->
+    <!--     About     -->
+    <div id="About" class="container-fluid fadeIn animated" style="display:none">
+        <div><i class="fa fa-chevron-right" onclick="closeAbout()"></i></div>
+        <img src="img/logo.jpg" class="hero-logo" alt="logo" />
+        <h1 class="text-center">Hi, my name is <strong id="name_id" class="text-uppercase">Serena Magliulo</strong></h1>
+        <div id="about_text">
+            <p class="text-center">I love producing beautiful
+                <span class="lead text-uppercase break">compelling web content</span>
+            </p>
+            <p class="text-center" style="font-size:3em; margin:0;">
+                I code
+                <span class="lead text-uppercase">WEBSITES </span> working in
+                <span class="lead text-uppercase break">Front-end development </span>
+            </p>
+        </div>
+        <div id="skill_button"><a href="#software_box" onclick="aibar()"><i class="fa fa-chevron-down"></i></a></div>
+        <div id="software_box">
+            <div id="apps_first_row">
+                <div class="software_item">
+                    <div id="container_1" class="bar"></div>
+                    <i id="html" class="fa fa-html5"></i>
+                </div>
+                <div class="software_item">
+                    <div id="container_2" class="bar"></div>
+                    <i id="css" class="fa fa-css3"></i>
+                </div>
+                <div class="software_item">
+                    <div id="container_3" class="bar"></div>
+                    <img id="bs_icon" onclick="bsShow()" onmouseover="document.getElementById('bs_icon').src='img/about_icons/bs_hover.png'" onmouseout="document.getElementById('bs_icon').src='img/about_icons/bs_normal.png'" src="img/about_icons/bs_normal.png">
+                </div>
+            </div>
+            <div id="apps_second_row">
+                <div class="software_item">
+                    <div id="container_4" class="bar"></div>
+                    <img id="jq_icon" onclick="jqShow()" onmouseover="document.getElementById('jq_icon').src='img/about_icons/jq_hover.png'" onmouseout="document.getElementById('jq_icon').src='img/about_icons/jq_normal.png'" src="img/about_icons/jq_normal.png">
+                </div>
+                <div class="software_item">
+                    <div id="container_5" class="bar"></div>
+                    <img id="js_icon" onclick="jsShow()" onmouseover="document.getElementById('js_icon').src='img/about_icons/js_hover.png'" onmouseout="document.getElementById('js_icon').src='img/about_icons/js_normal.png'" src="img/about_icons/js_normal.png">
+                </div>
+                <div class="software_item">
+                    <div id="container_6" class="bar"></div>
+                    <img id="ps_icon" onclick="psbar()" onmouseover="document.getElementById('ps_icon').src='img/about_icons/ps_hover.png'" onmouseout="document.getElementById('ps_icon').src='img/about_icons/ps_normal.png'" src="img/about_icons/ps_normal.png">
+                </div>
+                <div class="software_item">
+                    <div id="container_7" class="bar"></div>
+                    <img id="git_icon" onclick="gitShow()" onmouseover="document.getElementById('git_icon').src='img/about_icons/git_hover.png'" onmouseout="document.getElementById('git_icon').src='img/about_icons/git_normal.png'" src="img/about_icons/git_normal.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--     End of About      -->
+    <!--      Contact     -->
+    <div id="Contact" class="container-fluid fadeIn animated" style="display:none">
+        <div><i class="fa fa-chevron-left" onclick="closeContact()"></i></div>
+        <img src="img/profile.png" class="img-circle img-responsive" alt="profile-picture" />
+        <h1 class="text-uppercase text-center">Contact</h1>
+        <h2 id="contacth2" class="text-center">FRONT-END DEVELOPMENT</h2>
+        <ul id="contact_data" class="list-inline">
+            <li>
+                <i class="fa fa-phone"></i>07472889381
+            </li>
+            <li>
+                <i class="fa fa-envelope"></i>serena.magliulo@gmail.com
+            </li>
+        </ul>
+       
+    </div>
+    <!--     End of Contact      -->
+    <!--        Portfolio       -->
+    <div id="portfolio-loader" style="display:none;">
+        <!--    Loader      -->
+        <div id="pre-loader">
+        </div>
+        <div id="pre-percentage">
+            <span class="help">Click on these previews to open projects !</span>
+        </div>
+        <!--    End of Loader   -->
+    </div>
+    <div id="Portfolio" class="container-fluid fadeIn animated" style="display:none">
+        <div class="chevron-nav" onclick="closePortfolio()"><i class="fa fa-chevron-up"></i></div>
+       
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="container-fluid">
+                        <a href="http://pilarser.github.io/Jaeger-lp-git/">
+                            <div class="p_item">
+                                <img src="img/JL-preview.jpg" />
+                            </div>
+                        </a>
+                        <h1 class="text-center fadeInUp animated">Jaeger</h1>
+                        <h2 class="text-center fadeInUp animated">Landing Page</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-fluid">
+                        <a href="http://pilarser.github.io/Jaeger-journal-git/">
+                            <div class="p_item">
+                                <img id="smartway" src="img/Jaeger-journal-preview.jpg" />
+                            </div>
+                        </a>
+                        <h1 class="text-center fadeInUp animated">Jaeger</h1>
+                        <h2 class="text-center fadeInUp animated">Journal Landing Page</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-fluid">
+                        <a href="http://pilarser.github.io/jackwills-git/">
+                            <div class="p_item">
+                                <img src="img/jw-preview.jpg" />
+                            </div>
+                        </a>
+                        <h1 class="text-center fadeInUp animated">Jack Wills</h1>
+                        <h2 class="text-center fadeInUp animated">Homepage - Technical Test</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-fluid">
+                        <a href="http://pilarser.github.io/gaming-realm-git/" target="_blank">
+                            <div class="p_item">
+                                <img src="img/banner-mobilegaming.png" />
+                            </div>
+                        </a>
+                        <h1 class="text-center fadeInUp animated">Gaming Realm</h1>
+                        <h2 class="text-center fadeInUp animated">Technical Test</h2>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="container-fluid">
+                        <a href="http://pilarser.github.io/shutter-git/" target="_blank">
+                            <div class="p_item">
+                                <img src="img/company.jpg" />
+                            </div>
+                        </a>
+                        <h1 class="text-center fadeInUp animated">Shutter Centre</h1>
+                        <h2 class="text-center fadeInUp animated">Photography Course</h2>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background: none">
+                    <span class="fa fa-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next" style="background: none">
+                    <span class="fa fa-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--    Portfolio Modals    -->
+    <!--        End of Portfolio        -->
+    <!--        #Menu Modal          -->
+    <div id="Menu" class="modal fade In" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" onclick="closeMenu()">&times;</button>
+                    <div id="menu-body">
+                        <img src="img/profile.png" class="img-circle img-responsive" alt="profile-picture" />
+                        <div id="Menu_text">
+                            <h1 class="text-uppercase text-center">Serena Magliulo</h1>
+                            <h2 class="text-center">FRONT-END DEVELOPER</h2>
+                            <a href="img/FED-Serena Magliulo.pdf" download>
+                                <div class="download_cv">
+                                    <i class="fa fa-download"></i> DOWNLOAD CV
+                                </div>
+                            </a>
+                            <ul class="list-unstyled" id="menu_links">
+                                <div onclick="aibar()" class="inline_div">
+                                    <a href="#About" data-dismiss="modal" onclick="openAbout()">
+                                        <li class="text-center text-uppercase">About Me</li>
+                                    </a>
+                                </div>
+                                <a href="#Portfolio" data-dismiss="modal" onclick="openPortfolio()">
+                                    <li class="text-center text-uppercase">Portfolio</li>
+                                </a>
+                                <a href="#Contact" data-dismiss="modal" onclick="openContact()">
+                                    <li class="text-center text-uppercase">Contact</li>
+                                </a>
+                            </ul>
+                            <ul id="social" class="list-inline">
+                                <a href="https://www.facebook.com/serena.magliulo" target="_blank" style="display:inline">
+                                    <li style="display:inline"><i class="fa fa-facebook"></i></li>
+                                </a>
+                                <a href="https://www.instagram.com/serena_magliulo/?hl=it" style="display:inline" target="_blank">
+                                    <li style="display:inline"><i class="fa fa-instagram"></i></li>
+                                </a>
+                                <a href="https://www.linkedin.com/in/serena-magliulo-3339a477/" style="display:inline" target="_blank">
+                                    <li style="display:inline"><i class="fa fa-linkedin"></i></li>
+                                </a>
+                                <a href="https://github.com/Pilarser" style="display:inline" target="_blank">
+                                    <li style="display:inline"><i class="fa fa-github"></i></li>
+                                </a>
+                            </ul>
+                        </div>
+                        <!-- End of .menu-text -->
+                    </div>
+                </div>
+                <!-- End of .modal-body -->
+            </div>
+            <!-- End of .modal-content -->
+        </div>
+        <!-- End of .modal-dialog -->
+    </div>
+    <!--        End of Modal Menu       -->
+    <script>
+    var demo = new CountUp("count", 0, 100, 0, 5, options);
+    demo.start();
+
+    var myVar;
+    var a = 0;
+
+    function myFunction() {
+        if (a == 0) {
+            myVar = setTimeout(showPage, 2000);
+            a++;
+        } else {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("percentage").style.display = "none";
+            document.getElementById("myPage").style.display = "block";
+        }
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("percentage").style.display = "none";
+        document.getElementById("myPage").style.display = "block";
+    }
+
+    var easingFn = function(t, b, c, d) {
+        var ts = (t /= d) * t;
+        var tc = ts * t;
+        return b + c * (tc + -3 * ts + 3 * t);
+    }
+    var options = {  
+        useEasing: true,
+          easingFn: easingFn,
+          useGrouping: true,
+          separator: ',',
+          decimal: '.',
+    };
+    </script>
+</body>
+
+</html>
